@@ -10,7 +10,7 @@ export async function initDB() {
             id SERIAL PRIMARY KEY,
             clerk_id VARCHAR(500) UNIQUE NOT NULL,
             email VARCHAR(255),
-            role VARCHAR(20) DEFAULT 'user', --'user' or 'admin'
+            role VARCHAR(20) DEFAULT 'admin', --'user' or 'admin'
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
          )` 
          console.log('user done')
