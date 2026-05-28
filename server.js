@@ -29,14 +29,10 @@ app.use(helmet({
 
 app.use(morgan("dev"));
 app.use(express.json());
-app.use(cors(
-    {
- 
-  origin: true,
+app.use(cors({
+  origin: "https://vercel-frontend-yjhq.vercel.app",
   credentials: true
-
-}
-));
+}));
 
 //starter
 app.get("/",(req,res)=>{
