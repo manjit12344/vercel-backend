@@ -127,6 +127,7 @@ export const deleteCart = async(req,res)=>{
         if(deleted.length === 0) return res.status(404).json({success:false,msg:"item doesn't exist"})
         return res.json({
             success:true,
+            data:deleted[0],
             deleted:deleted,
             msg:'item deleted'
         })
