@@ -36,7 +36,8 @@ app.use(cors({
 
 //starter
 app.get("/",(req,res)=>{
-  res.send("API is running").json({
+  res.json({
+      message:"API is running !!",
       category:"/category",
       products:"/my_products",
       cart:"/cartItems",
