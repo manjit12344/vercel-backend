@@ -36,7 +36,12 @@ app.use(cors({
 
 //starter
 app.get("/",(req,res)=>{
-  res.send("hey")
+  res.send("API is running").json({
+      category:"/category",
+      products:"/my_products",
+      cart:"/cartItems",
+      orders:"/my_orders"
+  });
 });
 
 //login
